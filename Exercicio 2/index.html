@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <form id="loginForm">
+        <label for="usrname">Username</label>
+        <input type="text" id="usrname" name="usrname" required>
+        <label for="psw">Password</label>
+        <input type="password" id="psw" name="psw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <div id="message">
+            <h3>A senha deve conter:</h3>
+            <p id="letter" class="invalid">Uma letra <b>minúscula</b></p>
+            <p id="capital" class="invalid">Uma letra <b>maiúscula</b></p>
+            <p id="number" class="invalid">Um <b>número</b></p>
+            <p id="length" class="invalid">No mínimo <b>8 caracteres</b></p>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    
+
+    <script src="assets/js/validar.js"></script>
+</body>
+</html>
+

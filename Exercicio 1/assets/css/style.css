@@ -1,0 +1,23 @@
+.main{
+    text-align: center;  
+}
+
+.item{
+    display:none;
+    margin-top: 20px;
+}
+
+.item.active{
+    display: block;
+}
+
+ul, ol{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.descricao{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
